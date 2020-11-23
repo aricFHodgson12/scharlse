@@ -1,0 +1,117 @@
+#destinations {
+  .u-full-page {
+    @include mq($until: tablet) {
+      height: auto;
+    }
+  }
+  .flex {
+    padding: 6rem 0;
+    &:nth-child(1) {
+      @include mq($until: tablet) {
+        padding-top: 0;
+      }
+    }
+    &:nth-child(even) {
+      
+      @include mq($until: tablet-large) {
+        flex-direction: column-reverse;
+        h2 {
+          //top: 30%;
+        }
+      }
+    }
+    .u-half {
+      .u-overlay {
+        position: relative;
+        &:after {
+          content: "";
+          position: absolute;
+          height: 100%;
+          top: 0;
+          left: 0;
+          background: #000;
+          opacity: .5;
+          width: 100%;
+          @include mq($until: tablet) {
+            width: 100%;
+          }
+        }
+      }
+      @include mq($until: tablet) {
+        position: relative;
+      }
+    }
+  }
+  .destination-row {
+    padding: 0;
+    position: relative;
+    img {
+      object-fit: cover;
+    }
+    .destination-content {
+      padding: 2rem 8rem 0;
+      @include mq($until: tablet) { 
+        padding: 4rem 4rem 0;
+      }
+      p {
+        line-height: 1.5em;
+      }
+    }
+    &:last-child {
+      padding-bottom: 6em;
+    }
+  }
+  h1 {
+    font-size: 6.8rem;
+    @include mq($until: tablet) {
+      font-size: 2.8rem;
+      line-height: 1;
+      margin-bottom: 4rem !important;
+      margin-top: 2rem;
+    }
+  }
+  h2 {
+    margin-bottom: 0;
+    @include mq($until: tablet) { 
+      position: absolute;
+      top: -250px;
+      left: 0;
+      width: 100%;
+      z-index: 2;
+    }
+    @include mq($until: 475px) { 
+      top: -125px;
+    }
+  }
+  p {
+    margin-bottom: 3rem;
+    @include mq($until: tablet) {
+      font-size: 1.4rem;
+      margin-bottom: 1.8rem;
+    }
+  }
+  a {
+    font-size: 2rem;
+    @include mq($until: tablet) {
+      font-size: 1.2rem;
+    }
+    &.cta {
+      @include mq($until: tablet) {
+          display: block;
+          font-size: 1.53rem;
+      }
+  }
+  }
+  .destination-content {
+    padding: 0 10rem;
+    @include mq($until: tablet) {
+      padding: 0;
+    }
+  }
+  #slideBot {
+    margin-bottom: 10rem;
+    @include mq($until: tablet) {
+      margin-bottom: 1rem;
+    }
+  }
+}

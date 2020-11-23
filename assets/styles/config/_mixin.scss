@@ -1,0 +1,27 @@
+@mixin flex-col($gap, $child) {
+  @at-root #{&}__row {
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * #{$gap});
+    width: calc(100% + #{$gap});
+  }
+  @at-root #{&}__#{$child} {
+    margin-left: #{$gap};
+    @content;
+  }
+}
+
+@mixin placeholder {
+  &.placeholder {
+    @content;
+  }
+  &:-moz-placeholder {
+    @content;
+  }
+  &::-moz-placeholder {
+    @content;
+  }
+  &::-webkit-input-placeholder {
+    @content;
+  }
+}

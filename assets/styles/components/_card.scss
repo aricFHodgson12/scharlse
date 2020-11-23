@@ -1,0 +1,123 @@
+.cards {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	margin: 0rem 20rem;
+
+	@include mq($until: tablet) {
+		display: block;
+		margin: 0rem;
+	}        
+
+	.card {
+		max-width: 112rem;
+		margin: 2rem;
+
+		@include mq($until: tablet) {
+			width: 100%;
+			margin: 0px;
+			padding: 1rem;
+		}        		
+		&__background {
+			max-width: 112rem;
+			height: 80rem;
+			background-size: cover;
+			background-position-x: center;
+			background-position-y: bottom;
+			position: relative;
+
+			@include mq($until: tablet) {
+				width: 100%;
+				height: 25rem;
+			}        					
+		}
+
+		&__links{
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+			width: 60%;
+			margin: 5rem auto 2rem auto;
+			a {
+				font-family: $font-subtitle;
+				font-size: 11px;
+				text-decoration: underline;
+			}
+		}
+		&__texts {
+			color: white;
+			position: absolute;
+			z-index: 99;
+			position: absolute;
+			top: 68%;
+			left: 50%;
+			transform: translate(-50%, -50%);	
+			text-align: center;		
+			@include mq($until: tablet) {
+				width: 100%;
+				top: 50%;
+			}    			
+
+			h1 {
+				@include mq($until: tablet) {
+					font-size: 3.6rem;
+				}    			
+
+			}
+			p {
+				margin-bottom: 10rem;
+				@include mq($until: tablet) {
+					margin-bottom: 3rem;
+					padding-left: 3rem;
+					padding-right: 3rem;
+				}    			
+			}
+			a {
+				text-decoration: underline;
+				font-size: 1.5rem;
+			}
+		}
+
+		&__content {
+			position: relative;
+			padding: 4rem 9rem 5rem 9rem;
+
+			@include mq($until: tablet) {
+				padding: 2rem 2rem 2rem 2rem;
+			}    			
+			h5 {
+				text-align: center;
+				margin-bottom: 4rem;
+				@include mq($until: tablet) {
+					font-size: 1.5rem;
+				}    			
+
+				
+			}
+			p {
+				margin-bottom: 5rem;
+				text-align: center;
+				@include mq($until: tablet) {
+					font-size: 1.5rem;
+					line-height: 2.5rem;
+					margin-bottom: 3rem;
+				}    			
+
+			}
+		    ul {
+		      list-style-position: inside;
+		      text-align: center;
+		      list-style: inside;
+
+		      li {
+		      	font-family: $font-subtitle;
+				@include mq($until: tablet) {
+					font-size: 1.5rem;
+					line-height: 2.5rem;
+				}    			
+		      }
+
+		    }			
+		}
+	}	
+}

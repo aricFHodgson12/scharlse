@@ -1,0 +1,35 @@
+.citation {
+  &__wrap {
+    @include mq($from: tablet) {
+      padding: 0 6rem;
+      border-left: 2px solid rgba($color: #fff, $alpha: 0.2);
+    }
+    width: 90rem;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  &__big {
+    font-family: $font-title;
+    font-size: 20rem;
+    line-height: 18rem;
+    height: 8rem;
+    @include mq($until: tablet) {
+      font-size: 8rem;
+      line-height: 1;
+      height: 1.8rem;
+    }
+  }
+  &__name {
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    padding: 5rem 0 3rem 0;
+    @include mq($until: tablet) {
+      padding: 1rem 0 3rem 0;
+    }
+  }
+  &__map {
+    margin-top: 4em;
+    margin-bottom: 15rem;
+  }
+}

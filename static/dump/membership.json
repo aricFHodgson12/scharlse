@@ -1,0 +1,118 @@
+{ 
+    "@id": "/api/v2/pages/10",
+    "@type": "Page",
+    "id": 10,
+    "title": "Membership",
+    "slug": "membership",
+    "content": "<h1 class='ql-align-center'>BECOME A MEMBER</h1><p class='ql-align-center'>Becoming a Siena Charles Member means having the world at your fingertrips. Founder Jaclyn Sienna India has combed the globe 200 days per year, procuring only the best in luxury living.</br></br>We make the art of sublime luxury living beautiful and personal</p>",
+    "mainImage": null,
+    "template": null,
+    "ctaText": null,
+    "ctaType": null,
+    "templateContent": null,
+    "status": "published",
+    "items":
+        [ 
+            { 
+                "@id": "/api/page_items/5",
+                "@type": "PageItem",
+                "id": 5,
+                "title": "CITY GUIDES",
+                "content": "The hottest sushi chef in Tokyo. The most in-demand sommelier in Cape Town. A Sienna Charles membership means access to the highly coveted guides to the world’s top cities, curated personally by Jaclyn Sienna India.",
+                "image": [
+                    { 
+                        "@id": "/api/image_srcs/3444",
+                        "@type": "ImageSrc",
+                        "id": 3444,
+                        "name": "membership-magazine1-5f59b1234fdd2862964793.jpg",
+                        "alt": null,
+                        "filePath": "/images/2020/09/10/membership-magazine1-5f59b1234fdd2862964793.jpg" 
+                    }                        
+                ],
+                "position": 12 
+            },
+            { 
+                "@id": "/api/page_items/6",
+                "@type": "PageItem",
+                "id": 6,
+                "title": "FACE-TO-FACE",
+                "content": "We believe personal is best. Wherever you are, we will arrange a face-to-face meeting. After all, it’s all about getting to know you.",
+                "image": [
+                    { 
+                        "@id": "/api/image_srcs/3445",
+                        "@type": "ImageSrc",
+                        "id": 3445,
+                        "name": "membership-magazine2-5f59b1cd065e1094144524.jpg",
+                        "alt": null,
+                        "filePath": "/images/2020/09/10/membership-magazine2-5f59b1cd065e1094144524.jpg" 
+                    }                        
+                ],
+                "position": 13 
+            },
+            { 
+                "@id": "/api/page_items/7",
+                "@type": "PageItem",
+                "id": 7,
+                "title": "ACCESS TO SIENNA CHARLES AT HOME",
+                "content": "Private at home Michelin-star dining for two. Personal fitness consultations. Bespoke wine cellars. Flawlessly landscaped gardens. With a Sienna Charles membership, these personally vetted recommendations are available on tap.",
+                "image": [
+                    { 
+                        "@id": "/api/image_srcs/3446",
+                        "@type": "ImageSrc",
+                        "id": 3446,
+                        "name": "membership-magazine3-5f59b1d8f0e0b720752474.jpg",
+                        "alt": null,
+                        "filePath": "/images/2020/09/10/membership-magazine3-5f59b1d8f0e0b720752474.jpg" 
+                    }                        
+                ],                
+                "position": 14 
+            },
+            { 
+                "@id": "/api/page_items/8",
+                "@type": "PageItem",
+                "id": 8,
+                "title": "ONE STEP AHEAD",
+                "content": "Hotel room preferences. Restaurant tastes. Health and wellness favorites. Pillow choices. Lighting and fragrance proclivity. A Sienna Charles membership means being one step ahead. And knowing what you better than you know yourself.",
+                "image": [
+                    { 
+                        "@id": "/api/image_srcs/3447",
+                        "@type": "ImageSrc",
+                        "id": 3447,
+                        "name": "membership-magazine4-5f59b2ec9eb14535346719.jpg",
+                        "alt": null,
+                        "filePath": "/images/2020/09/10/membership-magazine4-5f59b2ec9eb14535346719.jpg" 
+                    }                        
+                ],      
+                "position": 15 },
+            { 
+                "@id": "/api/page_items/9",
+                "@type": "PageItem",
+                "id": 9,
+                "title": "UNLIMITED ACCESS",
+                "content": "Where to eat in Copenhagen? Where to stay in Morocco? The most in-demand facialist at Amangiri? One-off questions any time. Any day. We are here for you.\n\n",
+                "image": [
+                    { 
+                        "@id": "/api/image_srcs/3448",
+                        "@type": "ImageSrc",
+                        "id": 3448,
+                        "name": "membership-magazine5-5f59b7e3a1cc5009360849.jpg",
+                        "alt": null,
+                        "filePath": "/images/2020/09/10/membership-magazine5-5f59b7e3a1cc5009360849.jpg" 
+                    }                        
+                ],  
+                "position": 16 
+            } 
+        ],
+    "inSitemap": false,
+    "hideDelete": true,
+    "schemaServiceType": null,
+    "schemaDescription": null,
+    "schemaServiceOutputName": null,
+    "createdAt": "2020-09-09T03:05:25+00:00",
+    "updatedAt": "2020-09-14T11:26:52+00:00",
+    "createdBy": "admin@siennacharles.com",
+    "updatedBy": "admin@siennacharles.com",
+    "seoTitle": "",
+    "seoDescription": "",
+    "seoKeywords": null 
+}

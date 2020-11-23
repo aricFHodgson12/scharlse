@@ -1,0 +1,191 @@
+[ 
+    { 
+        "@id": "/api/v2/menus/1",
+        "@type": "Menu",
+        "id": 1,
+        "title": "Top Left Menu",
+        "slug": "top-left-menu",
+        "menuItems": 
+        [ 
+            { 
+                "@id": "/api/menu_items/1",
+                "@type": "MenuItem",
+                "id": "1",
+                "title": "Away",
+                "internal": true,
+                "link": "luxury-away-services",
+                "position": 0 
+            },
+            { 
+                "@id": "/api/menu_items/2",
+                "@type": "MenuItem",
+                "id": "2",
+                "title": "At Home",
+                "internal": true,
+                "link": "luxury-home-services",
+                "position": 1 
+            },
+            { 
+                "@id": "/api/menu_items/3",
+                "@type": "MenuItem",
+                "id": 3,
+                "title": "About",
+                "internal": true,
+                "link": "about/our-approach",
+                "position": 2 
+            },
+            { 
+                "@id": "/api/menu_items/3",
+                "@type": "MenuItem",
+                "id": 4,
+                "title": "Voyage Magazine",
+                "internal": true,
+                "link": "magazine",
+                "position": 3 
+            }             
+        ],
+        "createdAt": "2020-09-03T07:01:53+00:00",
+        "updatedAt": "2020-09-18T03:11:04+00:00",
+        "createdBy": "admin@siennacharles.com",
+        "updatedBy": "admin@siennacharles.com" 
+    },
+    { 
+        "@id": "/api/v2/menus/2",
+        "@type": "Menu",
+        "id": 2,
+        "title": "Top Right Menu",
+        "slug": "top-right-menu",
+        "menuItems": 
+        [ 
+            { 
+                "@id": "/api/menu_items/4",
+                "@type": "MenuItem",
+                "id": 4,
+                "title": "Sign in",
+                "internal": false,
+                "link": "https://sc-client.inconstruction.website/login/",
+                "position": 1 
+            },
+            { 
+                "@id": "/api/menu_items/5",
+                "@type": "MenuItem",
+                "id": 5,
+                "title": "Become a member",
+                "internal": true,
+                "link": "become-a-member",
+                "position": 4 
+            } 
+        ],
+        "createdAt": "2020-09-03T07:02:44+00:00",
+        "updatedAt": "2020-09-03T07:02:44+00:00",
+        "createdBy": "admin@siennacharles.com",
+        "updatedBy": "admin@siennacharles.com" 
+    },
+    { 
+        "@id": "/api/v2/menus/3",
+        "@type": "Menu",
+        "id": 3,
+        "title": "Footer Left Menu",
+        "slug":  "footer-left-menu",
+        "menuItems": [ 
+            { 
+                "@id": "/api/menu_items/6",
+                "@type": "MenuItem",
+                "id": 6,
+                "title": "AWAY",
+                "internal": true,
+                "link": "luxury-away-services",
+                "position": 5 
+            },
+            { 
+                "@id": "/api/menu_items/7",
+                "@type": "MenuItem",
+                "id": 7,
+                "title": "About",
+                "internal": true,
+                "link": "about/our-approach",
+                "position": 6 
+            },
+            { 
+                "@id": "/api/menu_items/8",
+                "@type": "MenuItem",
+                "id": 8,
+                "title": "AT HOME",
+                "internal": true,
+                "link": "luxury-home-services",
+                "position": 7 
+            },
+            { 
+                "@id": "/api/menu_items/9",
+                "@type": "MenuItem",
+                "id": 9,
+                "title": "Contact",
+                "internal": true,
+                "link": "contact",
+                "position": 8 
+            },
+            { 
+                "@id": "/api/menu_items/10",
+                "@type": "MenuItem",
+                "id": 10,
+                "title": "VOYAGE MAGAZINE",
+                "internal": true,
+                "link": "magazine",
+                "position": 9 
+            },
+            { 
+                "@id": "/api/menu_items/11",
+                "@type": "MenuItem",
+                "id": 11,
+                "title": "INSTAGRAM",
+                "internal": false,
+                "link": "https://www.instagram.com/siennacharles",
+                "position": 10 
+            }              
+        ],
+        "createdAt": "2020-09-03T07:04:51+00:00",
+        "updatedAt": "2020-09-03T07:04:51+00:00",
+        "createdBy": "admin@siennacharles.com",
+        "updatedBy": "admin@siennacharles.com" 
+    },
+    { 
+        "@id": "/api/v2/menus/4",
+        "@type": "Menu",
+        "id": 4,
+        "title": "Footer Right Menu",
+        "slug": "footer-right-menu",
+        "menuItems": [ 
+            { 
+                "@id": "/api/menu_items/11",
+                "@type": "MenuItem",
+                "id": 11,
+                "title": "Terms & conditions",
+                "internal": true,
+                "link": "terms",
+                "position": 10 
+            },
+            { 
+                "@id": "/api/menu_items/12",
+                "@type": "MenuItem",
+                "id": 12,
+                "title": "Privacy policy",
+                "internal": true,
+                "link": "policy",
+                "position": 11 
+            },
+            { 
+                "@id": "/api/menu_items/13",
+                "@type": "MenuItem",
+                "id": 13,
+                "title": "Cookies policy",
+                "internal": true,
+                "link": "cookies",
+                "position": 12 
+            } 
+        ],
+        "createdAt": "2020-09-03T07:05:04+00:00",
+        "updatedAt": "2020-09-03T07:05:04+00:00",
+        "createdBy": "admin@siennacharles.com",
+        "updatedBy": "admin@siennacharles.com" 
+    }       
+]

@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box; /* Opera/IE 8+ */
+}
+html {
+  // font-size: 62.5%;
+  font-size: 37.5%;
+  @include mq($until: tablet) {
+    font-size: 62.5%;
+  }
+}
+
+body {
+  background-color: #000;
+  font-family: $font-text;
+  font-weight: $light;
+  color: $text-color;
+  font-size: 2.5rem;
+  @include mq($until: tablet) {
+    font-size: 1.8rem;
+  }
+  //line-height: 3.4rem;
+  overflow-x: hidden;
+
+  &.m-open {
+    height: 100vh;
+    overflow-y: hidden;
+    @include mq($from: desktop) {
+      padding-right: 15px; /* Avoid width reflow */
+    }
+  }
+}
+
+.container {
+  width: calc(1600 * 100% / 1920);
+  max-width: 160rem;
+  margin: 0 auto;
+  height: 100%;
+  text-align: center;
+  @include mq($until: tablet) {
+    width: 100%;
+    max-width: 90%;
+  }
+  &--xl {
+    width: 100%;
+    @include mq($from: tablet) {
+      max-width: 90%;
+    }
+    @include mq($from: wide) {
+      max-width: 1720px;
+      margin: 0 auto;
+    }
+  }
+}
+.container--s {
+  width: 100%;
+  @include mq($from: tablet) {
+    max-width: 115rem;
+  }
+}
+
+section {
+  width: 100%;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+  &.fullblock {
+    min-height: 343px;
+    @include mq($until: tablet) {
+      min-height: auto;
+    }
+  }
+  &.height-m {
+    height: 200px;
+  }
+}
+
+.home_text {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 15rem;
+  margin-bottom: 15rem;
+  @include mq($until: tablet) {
+    margin-top: 8rem;
+    margin-bottom: 8rem;
+    max-width: 100%;
+    width: 100%;
+    padding: 1.8rem;
+  }  
+  p {
+    font-style: italic;  
+    margin-bottom: 5rem;
+    font-size: 4.3rem;
+    line-height: 6.7rem;
+    @include mq($until: tablet) {
+      font-size: 2.6rem;
+      line-height: 3.5rem;
+    }      
+  }
+
+}
+a {
+  color: $text-color;
+  text-decoration: none;
+}
+
+.cookie__pravacy {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #1a1a1a;
+  display: flex;
+  justify-content: flex-end;
+  text-align: right;
+  font-size: 1.4rem;
+  padding: 2.5rem 8rem;
+  line-height: 1.4;
+  button {
+    padding: 0.5rem 1rem;
+    margin-left: 5rem;
+  }
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition-property: opacity;
+  transition-timing-function: ease-in-out;
+  transition-duration: 500ms;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition-property: opacity;
+  transition-timing-function: ease-in-out;
+  transition-duration: 500ms;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}

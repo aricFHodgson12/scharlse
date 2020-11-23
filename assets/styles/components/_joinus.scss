@@ -1,0 +1,141 @@
+.joinus {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+  &__inner {
+    width: 100%;
+    background-color: #1a1a1a;
+    height: 40rem;
+    position: absolute;
+    top: 60%;
+    left: 0;
+  }
+  &__close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+  }
+}
+
+// Klaviyo Form
+.uZdWz.uZdWz {
+  font-family: "Cormorant Garamond",sans-serif;
+  padding: 0;
+  .dMHKxR.dMHKxR, .iHHjaC.iHHjaC {
+    padding: 0;
+  }
+  //Submit button
+  .gamZZK.gamZZK.gamZZK.gamZZK.gamZZK.gamZZK {
+    font-family: Roboto,sans-serif;
+    text-transform: uppercase;
+    padding: .5rem 4rem;
+    background-color: transparent;
+    border: 1px solid #dbdcde;
+    color: #dbdcde;
+    border-radius: 0;
+    box-shadow: 0.3rem 0.9rem 1rem 0 rgba(0,0,0,.2);
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: .5px;
+    line-height: 1.25em;
+  }
+  // Input style
+  input,
+  .bQDdTc.bQDdTc {
+    background-color: transparent;
+    border: 1px solid hsla(0,0%,100%,.3);
+    margin-right: 15px;
+    font-family: "Cormorant Garamond",sans-serif;
+    padding: .5rem 2rem;
+    width: 30rem;
+    outline: 0;
+    color: #dbdcde; 
+    &::placeholder {
+      font-family: "Cormorant Garamond",  sans-serif;
+      font-size: 2.2rem;
+      &:focus {
+        font-family: "Cormorant Garamond",  sans-serif;
+        font-size: 2.2rem;
+      }
+    }
+    &:focus {
+      &::placeholder {
+        font-family: "Cormorant Garamond",  sans-serif;
+        font-size: 2.2rem;
+      }
+    }
+  }
+  .fsIKy.fsIKy.fsIKy.fsIKy.fsIKy.fsIKy,
+  .dFAxdI.dFAxdI.dFAxdI.dFAxdI.dFAxdI.dFAxdI {
+    color: #dbdcde;
+    font-family: "Cormorant Garamond",sans-serif;
+    margin-right: 10px;
+    background: transparent;
+    font-size: 2.2rem;
+    border:none;
+    height: auto;
+    padding-left: 0;
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  .dFAxdI.dFAxdI.dFAxdI.dFAxdI.dFAxdI.dFAxdI {
+    color: #dbdcde;
+    background: transparent;
+    font-family: "Cormorant Garamond",  sans-serif !important;
+    font-size: 2.2rem;
+    border:none;
+    height: auto;
+    text-align: left;
+    &::-webkit-input-placeholder { /* Edge */
+      font-family: "Cormorant Garamond",  sans-serif;
+    }
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+      font-family: "Cormorant Garamond",  sans-serif;
+    }
+    &::placeholder {
+      font-family: "Cormorant Garamond",  sans-serif;
+      font-size: 2.2rem;
+    }
+  }
+  .dqEOHo.dqEOHo {
+    background: none;
+    text-align: left;
+    left: 0; 
+    top: 7px;
+  }
+  .hAkfYz.hAkfYz {
+    background: none;
+    border: none;
+  }
+  .hAkfYz.hAkfYz::before,
+  .hAkfYz.hAkfYz::after {
+    display: none;
+  }
+  .htnWBn.htnWBn {
+    background: transparent;
+    font-size: 10px;
+    padding: 0;
+  }
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover, 
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus {
+    background-color: black;
+    -webkit-text-fill-color: #dbdcde;;
+    -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+}

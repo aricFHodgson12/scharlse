@@ -1,0 +1,16 @@
+.style-chooser {
+  .vs__search::placeholder,
+  .vs__dropdown-menu,
+  .vs__dropdown-toggle {
+    border: none;
+    color: #fff;
+  }
+  .vs__selected {
+    color: #fff;
+  }
+  .vs__dropdown-toggle {
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    border-radius: 0;
+  }
+}

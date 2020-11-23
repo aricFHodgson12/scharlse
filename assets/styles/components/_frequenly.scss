@@ -1,0 +1,102 @@
+.frequently {
+  margin-bottom: 25rem;
+  @include mq($until: tablet) {
+    margin-bottom: 4rem;
+  }
+  .container {
+    .line-title {
+      span {
+        font-size: 2.5rem;
+        padding: 0 6rem;
+
+        @include mq($until: tablet) {
+          font-size:1.5rem;
+        }        
+      }
+      &:after {
+        @include mq($until: tablet) {
+          background:none;
+        }                    
+      }      
+    }
+
+    .flex--middle {
+      .u-sixth{
+        opacity: 0.7;
+        margin-top: 6rem;
+        @include mq($until: tablet) {
+          margin-top: 0rem;
+
+          img {
+            max-width: 60%;
+          }
+        }          
+      }
+    }
+  }
+  .row {
+    @include mq($until: tablet) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  h2 {
+    @include mq($until: tablet) {
+      font-size: 2rem;
+    }
+  }
+  .col {
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    height: 13rem;
+    overflow: hidden;
+    @include mq($until: tablet) {
+      width: 50%;
+      flex: none;
+      height: 8rem;
+    }
+  }
+}
+
+.submitinquery {
+  max-width: 75rem;
+  margin: 0 auto;
+  @include mq($until: tablet) {
+    max-width: 70rem;
+    padding: 5rem 2rem 0rem 2rem;
+  }
+  &__title  {
+    @include mq($until: tablet) {
+      font-size: 1.5rem;
+      line-height: 2.5rem;    
+    }    
+  } 
+  &__description  {
+
+    @include mq($until: tablet) {
+      font-size: 1.5rem;
+      line-height: 2.5rem;    
+    }        
+  }
+
+  &__action{
+    margin-top: 10rem;
+    margin-bottom: 15rem;
+    @include mq($until: tablet) {
+      margin-top: 6rem;
+      margin-bottom: 8rem;
+    }      
+    a {
+      font-family: $font-subtitle;
+      text-decoration: underline;
+      font-size: 2.5rem;
+      @include mq($until: tablet) {
+        font-size: 1.5rem;
+        line-height: 2.5rem;    
+      }              
+    }        
+  }
+    
+  
+}

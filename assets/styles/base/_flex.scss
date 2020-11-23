@@ -1,0 +1,259 @@
+/* ==========================================================================
+   #FLEX
+   ========================================================================== */
+
+@mixin vertical-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/**
+   * Cells are full-width and will stack on top of each other by default:
+   *
+   * <div class="flex">
+   *   <div class="flex__cell">
+   *   </div>
+   *   <div class="flex__cell">
+   *   </div>
+   * </div>
+   *
+   * Cells will in most cases be accompanied by utility classes that divide
+   * the grid into fractions. These are provided by our SCSS:
+   *
+   * <div class="flex">
+   *   <div class="flex__cell u-1/2">
+   *   </div>
+   *   <div class="flex__cell u-1/2">
+   *   </div>
+   * </div>
+   *
+   * Several modifier classes are provided. For example, `flex--auto` will
+   * divide the space equally between all containing cells without the need
+   * for width utility classes.
+   *
+   * <div class="flex--auto">
+   *   <div class="flex__cell">
+   *   </div>
+   *   <div class="flex__cell">
+   *   </div>
+   * </div>
+   */
+
+// Specify possible alignment values
+
+$scss-flexgrid-alignment-values: (
+  "--top": "flex-start",
+  "--middle": "center",
+  "--bottom": "flex-end",
+  "--baseline": "baseline",
+  "--stretch": "stretch"
+) !default;
+
+// Specify possible justify values
+
+$scss-flexgrid-justify-values: (
+  "--left": "flex-start",
+  "--center": "center",
+  "--right": "flex-end",
+  "--between": "space-between",
+  "--around": "space-around"
+) !default;
+
+/* The grid
+     ========================================================================== */
+
+.flex {
+  display: flex;
+  flex-flow: row wrap;
+  list-style: none;
+  padding: 0;
+  margin-left: -$spacing;
+  @include mq($until: tablet) {
+    margin-left: 0;
+  }
+  &--l {
+    .flex__cell {
+      padding-left: $spacing-l;
+      @include mq($until: tablet) {
+        padding-left: 0;
+      }
+    }
+  }
+  &--xl {
+    margin-left: -$spacing-xl;
+    .flex__cell {
+      padding-left: $spacing-xl;
+    }
+  }
+}
+
+/**
+   * 1. Cells are full-width and stack on top of each other by default.
+   */
+
+.flex__cell {
+  flex: 1;
+  flex-basis: 100%;
+  width: 100%; /* [1] */
+  padding-left: $spacing;
+  @include mq($until: tablet) {
+    padding-left: 0;
+  }
+}
+
+.displayflex {
+  display: flex;
+}
+.u-sixth {
+  flex-basis: 50%;
+  @include mq($until: tablet) {
+    height: 9rem;
+    display: flex;
+    align-items: center;
+  }
+
+  a {
+    margin: 0 auto;
+    display: block;
+  }
+
+  img {
+    max-width: 80%;
+  }
+}
+
+@include mq($until: tablet) {
+  .u-logo {
+    padding: 1rem 0;
+    img {
+      width: 80px;
+    }
+  }
+}
+
+@include mq($from: tablet-large) {
+  .u-forty {
+    flex-basis: 40%;
+  }
+
+  .u-logo {
+    flex-basis: 40px;
+    width: 40px;
+  }
+
+  .u-half {
+    flex-basis: 50%;
+    width: 50%;
+    flex: none;
+  }
+
+  .u-quarter {
+    flex-basis: 25%;
+    width: 25%;
+    flex: none;
+  }
+
+  .u-third {
+    flex-basis: 33.33%;
+    width: 33.33%;
+    flex: none;
+  }
+  .u-third-two {
+    flex-basis: 66.6%;
+    width: 66.6%;
+    flex: none;
+  }
+
+  .u-sixth {
+    flex-basis: 16.66%;
+    img {
+      max-width: 80%;
+    }
+  }
+}
+
+/* Automatically size cells by distributing them equally
+     ========================================================================== */
+
+.flex--auto {
+  & > .flex__cell {
+    flex: 1 0 0;
+  }
+}
+
+/* Horizontal alignment
+     ========================================================================== */
+
+@each $namespace, $value in $scss-flexgrid-justify-values {
+  .flex#{$namespace} {
+    justify-content: #{$value};
+  }
+}
+
+/* Pull behavior
+     ========================================================================== */
+
+.flex__cell--pull-left {
+  margin-right: auto;
+}
+
+.flex__cell--pull-right {
+  margin-left: auto;
+}
+
+/* Vertical alignment
+     ========================================================================== */
+
+@each $namespace, $value in $scss-flexgrid-alignment-values {
+  .flex#{$namespace} {
+    align-items: #{$value};
+  }
+}
+
+@each $namespace, $value in $scss-flexgrid-alignment-values {
+  .flex__cell#{$namespace} {
+    align-self: #{$value};
+  }
+}
+
+/* Content distribution
+     ========================================================================== */
+
+.flex--reverse {
+  flex-direction: row-reverse;
+}
+
+.flex--column {
+  flex-direction: column;
+}
+
+.flex--column-reverse {
+  flex-direction: column-reverse;
+}
+
+/*
+.row {
+  display: flex;
+  @include mq($until: tablet) {
+    display: block;
+  }
+  &--vertical {
+    flex-direction: column;
+  }
+  .col {
+    flex: 1;
+  }
+}
+
+.row-flex {
+  --gap: 12px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin: calc(-1 * var(--gap)) 0 0 calc(-1 * var(--gap));
+  width: calc(100% + var(--gap));
+  .col {
+    margin: var(--gap) 0 0 var(--gap);
+  }
+}
+*/

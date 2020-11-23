@@ -1,0 +1,127 @@
+.triptype {
+  @include mq($until: tablet) {
+    text-align: center;
+  }
+  h2 {
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+  ul {
+    position: relative;
+    @include mq($from: tablet) {
+      padding-left: 4rem;
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0.1rem;
+        height: 100%;
+        background: hsla(0, 0%, 100%, 0.5);
+      }
+    }
+    li {
+      margin-bottom: 2rem;
+    }
+  }
+  .col {
+    position: relative;
+    flex: none;
+    &--first {
+      width: 55%;
+      padding-right: 4rem;
+      @include mq($until: tablet) {
+        width: 100%;
+        padding-right: 0;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 0.1rem;
+        height: 100%;
+        background: rgba(
+          $color: (
+            #fff
+          ),
+          $alpha: 0.5
+        );
+      }
+      img {
+        margin-left: 0;
+        display: block;
+      }
+      .small {
+        display: flex;
+        margin-left: calc(-1 * 2rem);
+        width: calc(100% + 2rem);
+        margin-left: -2rem;
+        > div {
+          width: calc(50% - 2rem);
+          margin-top: 2rem;
+          margin-left: 2rem;
+        }
+      }
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      @include mq($until: tablet) {
+        display: block;
+      }
+      li {
+        // flex: 1;
+        margin-bottom: 2rem;
+        width: 100%;
+        padding-right: 0;
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+    &--last {
+      padding-left: 4rem;
+      width: 45%;
+      @include mq($until: tablet) {
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+        margin-top: 2rem;
+      }
+    }
+  }
+  /*
+  &__title {
+    font-family: $font-title;
+    text-transform: uppercase;
+    font-size: 3.6rem;
+    @include mq($until: tablet) {
+      font-size: 2.4rem;
+    }
+  }
+  */
+  &__link {
+    text-align: center;
+    margin: 2rem 0 10rem 0;
+    font-size: 11px;
+    @include mq($until: tablet) {
+      margin: 2rem 0 8rem 0;
+    }
+    a {
+      text-transform: uppercase;
+    }
+  }
+  /*
+  &__text {
+    @include mq($until: tablet) {
+      font-size: 1.4rem;
+    }
+    &--italic {
+      font-style: italic;
+    }
+  }
+  */
+}

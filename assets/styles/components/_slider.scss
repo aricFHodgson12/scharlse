@@ -1,0 +1,200 @@
+.slider {
+  width: 100%;
+  //height: 620px;
+
+  .swiper-wrapper {
+    align-items: center;
+  }
+  .swiper-container {
+    height: 100%;
+  }
+  .swiper-slide {
+    width: 100%;
+    height: 100%;
+    > div {
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+    }
+  }
+  .swiper-pagination {
+    bottom: 8rem;
+    left: 65%;
+    @include mq($until: tablet) {
+      bottom: 2rem;
+    }
+  }
+  .swiper-pagination-bullet {
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid #fff;
+    background-color: transparent;
+    opacity: 1;
+    margin: 0 0.5rem;
+    @include mq($until: tablet) {
+      width: 0.7rem;
+      height: 0.7rem;
+    }
+  }
+  .swiper-pagination-bullet-active {
+    background-color: #fff;
+  }
+}
+
+.destination-slider {
+  .flex {
+    @include mq($until: tablet) {
+      display: block;
+    }
+  }
+  .h1 {
+    font-size: 6.8rem;
+    @include mq($until: tablet) {
+      font-size: 2.8rem;
+      line-height: 1;
+      margin: 6rem 0 12rem 0rem !important;
+    }
+  }
+  .u-sixth {
+    @include mq($from: tablet) {
+      flex-basis: 16.66%;
+      width: 16.66%;
+      flex: none;
+    }
+  }
+  p {
+    //   white-space: pre-line;
+    //   @include mq($until: tablet) {
+    //     white-space: unset;
+    //   }
+  }
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+  .swiper-container {
+    height: 100%;
+  }
+
+  .swiper-slide {
+    background-size: cover;
+    position: relative;
+    color: #fff;
+    height: 100%;
+
+    @include mq($until: tablet) {
+      min-height: 40rem;
+      height: auto;
+      &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        // z-index: ;
+        width: 100%;
+        height: 40rem;
+        left: 0;
+        bottom: 0;
+        background: transparent;
+        background: linear-gradient(
+          0deg,
+          black 0%,
+          rgba(0, 0, 0, 0.9) 33%,
+          rgba(0, 0, 0, 0) 100%
+        );
+      }
+      &.small {
+        min-height: 0;
+        height: auto;
+        &:after {
+          display: none;
+        }
+      }
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.45);
+      top: 0;
+      left: 0;
+    }
+  }
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: #fff !important;
+    z-index: 3;
+
+    @include mq($until: tablet) {
+      top: 13.3rem;
+      &:after {
+        font-size: 2.4rem;
+      }
+    }
+    &.small-slider {
+      @include mq($until: tablet) {
+        top: 50%;
+        &:after {
+          font-size: 2.4rem;
+        }
+      }
+    }
+  }
+
+  .swiper-button-prev {
+    left: 10% !important;
+    @include mq($until: tablet) {
+      left: 3% !important;
+    }
+    &.small-slider {
+      left: 1% !important;
+      @include mq($until: tablet) {
+        left: 0 !important;
+      }
+    }
+  }
+  .swiper-button-next {
+    right: 10% !important;
+    @include mq($until: tablet) {
+      right: 3% !important;
+    }
+    &.small-slider {
+      right: 1% !important;
+      @include mq($until: tablet) {
+        right: 0 !important;
+      }
+    }
+  }
+  .swiper-small-pagination-wrap {
+    padding: 10rem 15rem;
+    @include mq($until: tablet) {
+      padding: 3rem 3rem;
+      overflow: hidden;
+      margin-left: 0 !important;
+    }
+  }
+  .swiper-small-pagination {
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.45);
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      transition: opacity 0.2s;
+    }
+    img {
+      max-width: 100%;
+    }
+    &.active {
+      &:after {
+        opacity: 0;
+      }
+    }
+  }
+}

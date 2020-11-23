@@ -1,0 +1,246 @@
+.footer {
+  margin-top: 3rem;
+  text-transform: uppercase;
+
+  &__moreinfo {
+    font-size: 3rem;
+    font-weight: 300;
+  }
+  &__main {
+    font-family: $font-subtitle;
+    font-size: 1.83rem;
+    //text-transform: uppercase;
+    // padding: 2rem 0;
+    border-top: 0.2rem solid rgba(255, 255, 255, 0.2);
+    .flex {
+      margin-left: 0px;
+    }
+    @include mq($until: tablet) {    
+      border-top: 0px;
+    }
+
+    .collpase_area {
+      position: relative;
+      padding: 1rem 0;
+
+      @include mq($until: tablet) {
+        &:before{
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100vw;
+          height: 1px;
+          margin-left: calc(calc(100% - 100vw) / 2);
+          opacity: 0.5;
+          background: #fff;
+        }
+
+        &:after{
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 100vw;
+          height: 1px;
+          margin-left: calc(calc(100% - 100vw) / 2);
+          background: #fff;
+          opacity: 0.5;
+        }      
+      }          
+    }
+    .u-logo {
+      img {
+        @include mq($until: tablet) {    
+          display: none;
+        }        
+      }
+    }
+    // border-bottom: 0.1rem solid rgba(255, 255, 255, 0.2);
+    .menu-item {
+      float: left;
+      text-align: left;
+      @include mq($until: tablet) {
+        width: 50%;
+        padding-bottom: 0px;
+        padding-top: 2rem;
+        a{
+          font-size: 1.1rem;
+        }
+      }
+    }
+    ul {
+      display: flex;
+      @include mq($until: tablet) {
+        flex-wrap: wrap;
+      }
+      li {
+        margin-right: 4.5rem;
+        font-size: 1.83rem;
+        text-align: center;
+        @include mq($until: tablet) {
+          font-size: 1.2rem;
+          width: 33.3%;
+          margin-right: 0;
+          margin-bottom: 2rem;
+        }
+        &:nth-child(4) {
+          @include mq($until: tablet) {
+            order: 5;
+          }
+        }
+        &:nth-child(5) {
+          @include mq($until: tablet) {
+            order: 4;
+          }
+        }
+        &:nth-child(6) {
+          @include mq($until: tablet) {
+            order: 6;
+          }
+        }
+        &:last-child {
+          margin-right: 0;
+          @include mq($until: tablet) {
+            padding-left: 0;
+          }
+        }
+        a {
+          letter-spacing: -0.1px;
+        }
+      }
+    }
+  }
+
+  &__collapse {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    @include mq($from: tablet) {
+      display: none !important;
+    }
+
+    p {
+      font-family: $font-subtitle;
+      @include mq($until: tablet) {
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        margin-bottom: 0px;
+      }      
+    }
+    .plus {
+      // margin-right: -1.5rem;
+    }
+    .minus {
+      position: relative;
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1.5rem;
+        height: 1px;
+        background: #fff;
+      }
+    }
+  }
+
+  &__action {
+    display: block;
+    text-align: center;
+    font-size: 1.83rem;
+    @include mq($from: tablet) {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end !important;
+    }
+  }
+  &__sup {
+    font-style: italic;
+    font-size: 1.83rem;
+    padding: 2rem 0;
+    @include mq($until: tablet) {
+      text-align: center;
+      font-size: 1rem;
+    }
+
+    @include mq($from: tablet) {
+      nav {
+        float: right;
+      }
+    }
+    ul {
+      display: flex;
+      @include mq($until: tablet) {
+        justify-content: left;
+        margin-top: 1rem;
+      }
+      li {
+        display: flex;
+        align-items: center;
+        &:after {
+          content: "";
+          position: relative;
+          display: inline-block;
+          height: 100%;
+          width: 0.1rem;
+          background-color: #fff;
+          margin: 0 2.5rem;
+          @include mq($until: tablet) {
+            margin: 0 1rem;
+          }
+        }
+        &:last-child {
+          &:after {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.official {
+  margin: 100px; 
+  text-align: left;
+
+  @include mq($until: tablet) {
+    margin: 0px;
+    padding: 2rem;
+  }
+
+  h2 {
+    margin-bottom: 1rem;
+    @include mq($until: tablet) {
+      font-size: 2.5rem;
+      line-height: 2.6rem;
+    }    
+  }
+  p {
+    margin-bottom: 5rem;
+    @include mq($until: tablet) {
+      font-size: 2rem;
+      line-height: 2.5rem;
+      margin-bottom: 2rem;
+    }    
+
+    .list_number {
+      list-style: decimal;
+      list-style-position: inside;
+    }    
+    .list_dot {
+      list-style: outside;
+      list-style-position: inside;      
+    }
+  }
+
+  h4 {
+    a {
+      text-decoration: underline;
+    }
+  }
+}

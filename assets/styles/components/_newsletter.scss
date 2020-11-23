@@ -1,0 +1,113 @@
+.newsletter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include mq($until: tablet) {
+    display: block;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  &__title {
+    margin-right: 2rem;
+    @include mq($until: tablet) {
+      margin: 1rem 0;
+    }
+  }
+  &__input {
+    margin-right: 2rem;
+    input {
+      font-family: $font-text;
+      font-size: 1.83rem;
+      @include mq($until: tablet) {
+        font-size: 1.83rem;
+      }
+      &.cta {
+        padding: 0.5rem 2rem;
+        transition: all 0.3s;
+        &:hover {
+          color: #000;
+          background-color: #fff;
+        }
+
+        &--landing {
+          font-size: 2.5rem;
+          padding: 0.5rem 2rem;
+          @include mq($until: tablet) {
+            font-size: 1.8rem;
+          }
+        }
+      }
+    }
+    @include mq($until: tablet) {
+      margin-bottom: 2rem;
+      margin-right: 0;
+    }
+    // Klaviyo Form
+    .uZdWz.uZdWz {
+      
+      //Submit button
+      .gamZZK.gamZZK.gamZZK.gamZZK.gamZZK.gamZZK {
+        font-size: 2rem;
+        font-weight: 600;
+        letter-spacing: .5px;
+        line-height: 1.25em;
+      }
+      // Input style
+      .bQDdTc.bQDdTc {
+        background-color: transparent;
+        border: 1px solid hsla(0,0%,100%,.3);
+        margin-right: 15px;
+        font-family: "Cormorant Garamond",sans-serif;
+        padding: .75rem 2rem;
+        width: 30rem;
+        outline: 0;
+        color: #dbdcde; 
+      }
+      .fsIKy.fsIKy.fsIKy.fsIKy.fsIKy.fsIKy,
+      .dFAxdI.dFAxdI.dFAxdI.dFAxdI.dFAxdI.dFAxdI {
+        color: #dbdcde;
+        font-family: "Cormorant Garamond",sans-serif;
+        margin-right: 10px;
+        background: transparent;
+        font-size: 2.5rem;
+        border:none;
+        height: auto;
+        padding-left: 0;
+        &:focus {
+          box-shadow: none;
+        }
+      }
+      .dFAxdI.dFAxdI.dFAxdI.dFAxdI.dFAxdI.dFAxdI {
+        font-size: 2.5rem;
+        &::placeholder, &:focus {
+          font-family: "Cormorant Garamond",  sans-serif;
+          font-size: 2.5rem;
+        }
+      }
+      .hAkfYz.hAkfYz {
+        background: none;
+        border: none;
+      }
+      .hAkfYz.hAkfYz::before,
+      .hAkfYz.hAkfYz::after {
+        display: none;
+      }
+      .htnWBn.htnWBn {
+        background: transparent;
+        font-size: 10px;
+        padding: 0;
+      }
+    }
+  }
+  input {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 0.5rem 2rem;
+    width: 30rem;
+    outline: none;
+    color: #dbdcde;
+    @include mq($until: tablet) {
+      width: 100%;
+    }
+  }
+}
